@@ -1,0 +1,13 @@
+$colors:(
+	
+);
+$fonts:(	
+	font-poppins: "Poppins",
+	//font-fontawesome: "FontAwesome", sans-serif;
+);
+@function getFont($key) {
+	@return map-get($fonts, $key);
+}
+@function getColor($key) {
+	@return map-get($colors, $key);
+}
