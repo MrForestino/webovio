@@ -1,0 +1,17 @@
+.whatwedo{
+	&__container--flex{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 50px;// змінити
+	}
+	&__foryou,&__aweseme_project{
+	display: flex;
+	}
+}
+.aweseme_project,.ballenciaga__project,
+.model__project,.booking__project{
+		display: flex;
+		gap: 30px;
+	}

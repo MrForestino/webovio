@@ -3,9 +3,26 @@
 	background-size: cover; 
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
-	padding-top: 188px;
-	&__container{
+	padding: 188px 0 211px;
+	&__text, &__title,&__subtext{
+		color: map-get($colors, 'color-font-white');
+	}
+	&__text{
+		font-size: 14px;
+	}
+	&__title{
+		font-size: 60px;
 		width: 616px;
+		padding: 22px 0 24px;
+	}
+	&__subtext{
+		width: 581px;
+		padding-bottom: 45px;
+	}
+	&__link{
+		color: map-get($colors, 'color-gold');
+		font-family:'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: underline;
 	}
 }

@@ -1,0 +1,41 @@
+.productidea{
+	&__container--flex{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__title{
+		width: 607px;
+		margin-bottom: 60px;
+	}
+}
+.card{
+	height: 255px;
+	&__title{
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 142%;
+		text-transform: uppercase;
+		width: 183px;
+		margin-bottom: 20px;
+	}
+	&__text{
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 186%;
+		color: rgba(33, 56, 66, 0.6);
+		width: 192px;
+	}
+}
+.design__text{
+	margin-bottom: 56px;
+}
+.uxreview__text{
+	margin-bottom: 90px;
+}
+.scopping__text{
+	margin-bottom: 30px;
+}
+.codereview__text{
+	margin-bottom: 60px;
+}

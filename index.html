@@ -6,14 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <a href="./" class="logo__link">
+        <div class="container header__container--flex">
+            <a href="./" class="header__logo--link">
                 <img
                 src='./svg/logo.svg'
                 width='55px'
@@ -22,18 +27,20 @@
                 src='./svg/webovio.svg'
                 />
             </a>
-            <div class="burger__menu"></div>
             <nav class="header__nav">
-                <input type='checkbox' id='toggle'/>
-                <label for='toggle'>
-                    <span class='toggle-btn'></span>
-                </label>
+
                 <!-- <ul class="header__nav--list">
                     <li class="nav__list--item"></li>
                     <li class="nav__list--item"></li>
                     <li class="nav__list--item"></li>
                 </ul> -->
             </nav>
+            <div class="header__menu--box">
+                <input type='checkbox' id='toggle'/>
+                <label for='toggle'>
+                    <span class='toggle-btn'></span>
+                </label>
+            </div>
         </div>
     </header>
     <main>
@@ -48,15 +55,15 @@
             </div>
         </section>
         <section class="whatwedo">
-            <div class="container">
+            <div class="container whatwedo__container--flex">
                 <div class="whatwedo__foryou">
                     <div class="whatwedo__foryou--box">
                         <p class="foryou__text">
                             What we do for you
                         </p>
-                        <h1 class="foryou__title">
+                        <h2 class="foryou__title">
                             Strategy. Design  Content. Technology Development 
-                        </h1>
+                        </h2>
                         <p class="foryou__subtitle">
                             There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.
                         </p>
@@ -75,48 +82,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="awesome__project">
-                    <h2 class="project__title">We Have Some Awesomr Project.</h2>
-                    <p class="project__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                <div class="whatwedo__aweseme_project">
+                    <h2 class="awesome__title">
+                        We Have Some Awesome Project.
+                    </h2>
+                    <p class="awesome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                 </div>
-                <div class="balenciaga__container">
-                    <div class="aweseme_project">
-                        <h2 class="awesome__title">
-                            We Have Some Awesome Project.
-                        </h2>
-                        <p class="awesome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    </div>
+                <div class="whatwedo__balenciaga__container">
                     <div class="ballenciaga__project">
-                        <img src="" alt=""/>
+                        <img 
+                        src="./img/bg-image.png" 
+                        width='335px'
+                        height='550px'
+                        alt=""
+                        />
                         <div class="balenciaga__box">
                             <h2 class="balenciaga__title">
                                 The wall new Balenciaga.com
                             </h2>
-                            <p class="balenciaga__text">This article is floated online with an aim to help you find the best dvd printing solution.</p>
+                            <p class="balenciaga__text">This article is floated online with an aim to help you find the best dvd printing solution.</p><br/>
                             <p class="balenciaga__subtext">Dvd printing is an important feature used by large and small DVD production houses to print information on DVDs.</p>
                             <a href="" class="balenciaga__link">‣ See Case Study</a>
                         </div>
                     </div>
-                    <div class="ballenciaga__project">
-                        <img src="" alt=""/>
-                        <div class="balenciaga__box">
-                            <h2 class="balenciaga__title">
+                </div>
+                <div class="whatwedo__model__container">
+                    <div class="model__project">
+                        <div class="model__box">
+                            <h2 class="model__title">
                                 Is this the future of 3D model?
                             </h2>
-                            <p class="balenciaga__text">While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space.</p>
-                            <p class="balenciaga__subtext">It is those feelings that drive our love of astronomy and our desire to learn more and more about it.</p>
-                            <a href="" class="balenciaga__link">‣ See Case Study</a>
+                            <p class="model__text">While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space.</p><br/>
+                            <p class="model__subtext">It is those feelings that drive our love of astronomy and our desire to learn more and more about it.</p>
+                            <a href="" class="model__link">‣ See Case Study</a>
                         </div>
+                        <img 
+                        src="./img/bg-image.png" 
+                        width='335px'
+                        height='550px'
+                        alt=""
+                        />
                     </div>
-                    <div class="ballenciaga__project">
-                        <img src="" alt=""/>
-                        <div class="balenciaga__box">
-                            <h2 class="balenciaga__title">
+                </div>
+                <div class="whatwedo__booking__container">
+                    <div class="booking__project">
+                        <img 
+                        src="./img/bg-image.png" 
+                        width='335px'
+                        height='550px'
+                        alt=""
+                        />
+                        <div class="booking__box">
+                            <h2 class="booking__title">
                                 Is this the future of Online Booking
                             </h2>
-                            <p class="balenciaga__text">You should be able to find several indispensable facts about motivation in the following paragraphs.</p>
-                            <p class="balenciaga__subtext">If there’s at least one fact you didn’t know before, imagine the difference it might make.</p>
-                            <a href="" class="balenciaga__link">‣ See Case Study</a>
+                            <p class="booking__text">You should be able to find several indispensable facts about motivation in the following paragraphs.</p><br/>
+                            <p class="booking__subtext">If there’s at least one fact you didn’t know before, imagine the difference it might make.</p>
+                            <a href="" class="booking__link">‣ See Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -125,27 +147,29 @@
         <section class="productidea">
             <div class="container">
                 <h2 class='productidea__title'>Deation & Evaluation - Best Way to Kick off Your Product Idea</h2>
-                <div class="productidea__design">
-                    <h2 class="card__title">Product Design Sprint</h2>
-                    <p class="card__text">
-                        A five-day workshop that will help you answer crucial business questions
-                    </p>
-                    <a href="./" class="card__link">‣ Read More</a>
-                </div>
-                <div class="productidea__scopping card">
-                    <h2 class="card__title">Scoping Session</h2>
-                    <p class="card__text">A workshop aimed at shaping your business idea, answering questions regarding project planning</p>
-                    <a href="./" class="card__link">‣ Read More</a>
-                </div>
-                <div class="productidea__uxreview card">
-                    <h2 class="card__title">UX Review</h2>
-                    <p class="card__text">An evaluation which will help you radically improve your product.</p>
-                    <a href="./" class="card__link">‣ Read More</a>
-                </div>
-                <div class="productidea__codereview card">
-                    <h2 class="card__title">Code Review</h2>
-                    <p class="card__text">Do you know what one of the key secrets of success is what makes people successful in business</p>
-                    <a href="./" class="card__link">‣ Read More</a>
+                <div class="productidea__container--flex">
+                    <div class="productidea__design card">
+                        <h2 class="card__title">Product Design Sprint</h2>
+                        <p class="card__text design__text">
+                            A five-day workshop that will help you answer crucial business questions
+                        </p>
+                        <a href="./" class="card__link">‣ Read More</a>
+                    </div>
+                    <div class="productidea__scopping card">
+                        <h2 class="card__title">Scoping Session</h2>
+                        <p class="card__text scopping__text">A workshop aimed at shaping your business idea, answering questions regarding project planning</p>
+                        <a href="./" class="card__link">‣ Read More</a>
+                    </div>
+                    <div class="productidea__uxreview card">
+                        <h2 class="card__title">UX Review</h2>
+                        <p class="card__text uxreview__text">An evaluation which will help you radically improve your product.</p>
+                        <a href="./" class="card__link">‣ Read More</a>
+                    </div>
+                    <div class="productidea__codereview card">
+                        <h2 class="card__title">Code Review</h2>
+                        <p class="card__text codereview__text">Do you know what one of the key secrets of success is what makes people successful in business</p>
+                        <a href="./" class="card__link">‣ Read More</a>
+                    </div>
                 </div>
             </div>
         </section>
