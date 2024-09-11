@@ -192,21 +192,40 @@ input[type=checkbox]:checked ~ label span::after {
 }
 .whatwedo__foryou, .whatwedo__aweseme_project {
   display: flex;
+  flex-direction: column;
 }
 
 .aweseme_project, .ballenciaga__project,
 .model__project, .booking__project {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .whatwedo__container--flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .whatwedo__foryou, .whatwedo__aweseme_project {
+    display: flex;
+    flex-direction: row;
+  }
+  .aweseme_project, .ballenciaga__project,
+  .model__project, .booking__project {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .productidea__container--flex {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 .productidea__title {
-  width: 607px;
+  font-size: 36px;
   margin-bottom: 60px;
 }
 
@@ -229,18 +248,34 @@ input[type=checkbox]:checked ~ label span::after {
   width: 192px;
 }
 
-.design__text {
-  margin-bottom: 56px;
+.product__container--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.uxreview__text {
-  margin-bottom: 90px;
-}
-
-.scopping__text {
-  margin-bottom: 30px;
-}
-
-.codereview__text {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .productidea__container--flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .productidea__title {
+    width: 607px;
+  }
+  .product__container--flex {
+    display: block;
+  }
+  .design__text {
+    margin-bottom: 56px;
+  }
+  .uxreview__text {
+    margin-bottom: 90px;
+  }
+  .scopping__text {
+    margin-bottom: 30px;
+  }
+  .codereview__text {
+    margin-bottom: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */

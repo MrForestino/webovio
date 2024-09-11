@@ -1,11 +1,12 @@
 .productidea{
 	&__container--flex{
 		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
 	}
 	&__title{
-		width: 607px;
+		// width: 607px;
+		font-size: 36px;
 		margin-bottom: 60px;
 	}
 }
@@ -18,6 +19,7 @@
 		text-transform: uppercase;
 		width: 183px;
 		margin-bottom: 20px;
+
 	}
 	&__text{
 		font-weight: 500;
@@ -27,15 +29,59 @@
 		width: 192px;
 	}
 }
-.design__text{
-	margin-bottom: 56px;
+.product__container--flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.uxreview__text{
-	margin-bottom: 90px;
+@media screen and (min-width:1200px){
+	.productidea{
+		&__container--flex {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+		&__title{
+			width: 607px;
+		}
+	}
+	.product__container--flex{
+		display: block;
+	}
+	.design__text{
+		margin-bottom: 56px;
+	}
+	.uxreview__text{
+		margin-bottom: 90px;
+	}
+	.scopping__text{
+		margin-bottom: 30px;
+	}
+	.codereview__text{
+		margin-bottom: 60px;
+	}
 }
-.scopping__text{
-	margin-bottom: 30px;
-}
-.codereview__text{
-	margin-bottom: 60px;
-}
+// @media screen and (min-width:768px){
+// 	.productidea{
+// 		&__title{
+// 			width: 500px;
+// 		}
+// 		&__container--flex {
+// 			display: grid;
+// 			grid-template-columns: repeat(2, 1fr);
+// 			gap: 30px;
+// 		}
+// 	}
+// 	.design__text{
+// 		margin-bottom: 56px;
+// 	}
+// 	.uxreview__text{
+// 		margin-bottom: 90px;
+// 	}
+// 	.scopping__text{
+// 		margin-bottom: 30px;
+// 	}
+// 	.codereview__text{
+// 		margin-bottom: 60px;
+// 	}
+// }

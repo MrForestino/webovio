@@ -8,10 +8,31 @@
 	}
 	&__foryou,&__aweseme_project{
 	display: flex;
+	flex-direction: column;
 	}
 }
 .aweseme_project,.ballenciaga__project,
 .model__project,.booking__project{
 		display: flex;
+		flex-direction: column;
 		gap: 30px;
+	}
+	@media screen and (min-width:1200px){
+		.whatwedo{
+			&__container--flex{
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+			}
+			&__foryou,&__aweseme_project{
+			display: flex;
+			flex-direction: row;
+			}
+		}
+		.aweseme_project,.ballenciaga__project,
+		.model__project,.booking__project{
+				display: flex;
+				flex-direction: row;
+				gap: 30px;
+			}
 	}
