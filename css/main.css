@@ -27,6 +27,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #FFD723;
+}
+
 *,
 *::before,
 *::after {
@@ -60,12 +64,7 @@ img {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1100px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1199px) {
-  .container {
-    max-width: 768px;
+    max-width: 1440px;
   }
 }
 @media (max-width: 768px) {
@@ -207,6 +206,9 @@ input[type=checkbox]:checked ~ label span::after {
   .whatwedo {
     position: relative;
   }
+  .whatwedo__foryou--box {
+    margin-right: 160px;
+  }
   .whatwedo__foryou--box, .whatwedo__foryou--text {
     padding-top: 244px;
   }
@@ -218,17 +220,18 @@ input[type=checkbox]:checked ~ label span::after {
   .whatwedo__foryou--cardphoto {
     display: flex;
     align-items: center;
-    align-content: center;
-    outline: 1px dotted tomato;
+  }
+  .whatwedo__foryou--card {
+    padding: 0 8px 60px 40px;
   }
   .whatwedo__foryou, .whatwedo__aweseme_project {
-    display: flex;
     flex-direction: row;
   }
   .whatwedo__foryou--text {
     font-style: italic;
     font-size: 24px;
     line-height: 167%;
+    padding-bottom: 50px;
   }
   .whatwedo__foryou--card {
     width: 474px;
@@ -236,12 +239,16 @@ input[type=checkbox]:checked ~ label span::after {
     box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
     background: #ffffff;
   }
+  .text-card {
+    padding-left: 30px;
+  }
   .card__text--name {
     font-weight: 700;
     font-size: 22px;
     color: #4d533c;
   }
   .ceo {
+    width: 100%;
     font-size: 16px;
     color: #152934;
   }
@@ -250,6 +257,22 @@ input[type=checkbox]:checked ~ label span::after {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding-top: 100px;
+  }
+  .awesome__title {
+    margin-right: 133px;
+  }
+  .balenciaga__box, .booking__box {
+    margin-left: 96px;
+  }
+  .model__box {
+    margin-right: 58px;
+  }
+  .balenciaga__title, .booking__title, .model__title {
+    margin-bottom: 24px;
+  }
+  .balenciaga__subtext, .booking__subtext, .model__subtext {
+    margin-bottom: 90px;
   }
 }
 .productidea__container--flex {
@@ -288,6 +311,9 @@ input[type=checkbox]:checked ~ label span::after {
 }
 
 @media screen and (min-width: 1200px) {
+  .productidea {
+    padding: 165px 150px;
+  }
   .productidea__container--flex {
     display: flex;
     justify-content: space-between;
@@ -311,4 +337,37 @@ input[type=checkbox]:checked ~ label span::after {
   .codereview__text {
     margin-bottom: 60px;
   }
+}
+footer {
+  background-color: #50583B;
+  padding: 310px 164px 30px;
+}
+
+.phone__text, .phone__address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 250%;
+  color: #b6c197;
+}
+
+address {
+  display: flex;
+}
+
+.number, .address {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 250%;
+  color: #fff;
+}
+
+.c {
+  font-size: 14px;
+  color: #b5c096;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

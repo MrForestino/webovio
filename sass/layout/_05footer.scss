@@ -1,0 +1,28 @@
+footer{
+	background-color: #50583B;
+	padding: 310px 164px 30px;
+}
+.phone__text,.phone__address{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 250%;
+	color: #b6c197;
+}
+address{
+	display: flex;
+}
+.number,.address{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 250%;
+	color: #fff;
+}
+.c{
+	font-size: 14px;
+	color: #b5c096;
+}
+.footer__logo{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

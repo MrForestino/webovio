@@ -21,6 +21,9 @@
 	@media screen and (min-width:1200px){
 		.whatwedo{
 			position: relative;
+			&__foryou--box{
+				margin-right: 160px;
+			}
 			&__foryou--box, &__foryou--text{
 				padding-top: 244px;
 			}
@@ -32,17 +35,18 @@
 			&__foryou--cardphoto{
 				display: flex;
 				align-items: center;
-				align-content: center;
-				outline: 1px dotted tomato;
+			}
+			&__foryou--card{
+				padding: 0 8px 60px 40px;
 			}
 			&__foryou,&__aweseme_project{
-			display: flex;
 			flex-direction: row;
 			}
 			&__foryou--text{
 				font-style: italic;
 				font-size: 24px;
 				line-height: 167%;
+				padding-bottom: 50px;
 			}
 			&__foryou--card{
 				width: 474px;
@@ -51,12 +55,16 @@
 				background: #ffffff;
 			}
 		}
+		.text-card{
+			padding-left: 30px;
+		}
 		.card__text--name{
 			font-weight: 700;
 			font-size: 22px;
 			color: #4d533c;
 		}
 		.ceo{
+			width: 100%;
 			font-size: 16px;
 			color: #152934;
 		}
@@ -65,5 +73,21 @@
 				display: flex;
 				flex-direction: row;
 				gap: 30px;
+				padding-top: 100px;
 			}
+		.awesome__title{
+			margin-right: 133px;
+		}
+		.balenciaga__box,.booking__box{
+			margin-left: 96px;
+		}
+		.model__box{
+			margin-right: 58px;
+		}
+		.balenciaga__title,.booking__title,.model__title{
+			margin-bottom: 24px;
+		}
+		.balenciaga__subtext,.booking__subtext,.model__subtext{
+			margin-bottom: 90px;
+		}
 	}
