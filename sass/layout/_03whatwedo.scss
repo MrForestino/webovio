@@ -1,4 +1,5 @@
 .whatwedo{
+	position: relative;
 	&__container--flex{
 		display: flex;
 		flex-direction: column;
@@ -19,15 +20,45 @@
 	}
 	@media screen and (min-width:1200px){
 		.whatwedo{
+			position: relative;
+			&__foryou--box, &__foryou--text{
+				padding-top: 244px;
+			}
 			&__container--flex{
 				display: flex;
 				justify-content: center;
 				flex-direction: row;
 			}
+			&__foryou--cardphoto{
+				display: flex;
+				align-items: center;
+				align-content: center;
+				outline: 1px dotted tomato;
+			}
 			&__foryou,&__aweseme_project{
 			display: flex;
 			flex-direction: row;
 			}
+			&__foryou--text{
+				font-style: italic;
+				font-size: 24px;
+				line-height: 167%;
+			}
+			&__foryou--card{
+				width: 474px;
+				height: 644px;
+				box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
+				background: #ffffff;
+			}
+		}
+		.card__text--name{
+			font-weight: 700;
+			font-size: 22px;
+			color: #4d533c;
+		}
+		.ceo{
+			font-size: 16px;
+			color: #152934;
 		}
 		.aweseme_project,.ballenciaga__project,
 		.model__project,.booking__project{
