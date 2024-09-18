@@ -6,6 +6,7 @@ $colors: (
   color-font-white:#ffffff,
 	color-gold:#FFD723,
 	color-darkgreen:#4D533C,
+	color-light-green: #B6C197,
 );
 @function getFont($key) {
 	@return map-get($fonts, $key);

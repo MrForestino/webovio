@@ -1,6 +1,26 @@
 footer{
-	background-color: #50583B;
 	padding: 310px 164px 30px;
+
+	background-image: url(../img/bg.png);
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 188px 0 211px;
+}
+.informations{
+	display: flex;
+}
+.informations__services,
+.informations__help{
+	padding-right: 70px;
+}
+.informations__company{
+	padding-right: 124px;
+}
+.touch___text{
+	// color: map-get($colors'color-light-green');
+	color: #B6C197;
+	width: 250px;	
 }
 .phone__text,.phone__address{
 	font-weight: 400;
@@ -16,6 +36,7 @@ address{
 	font-size: 16px;
 	line-height: 250%;
 	color: #fff;
+	text-decoration: none;
 }
 .c{
 	font-size: 14px;
