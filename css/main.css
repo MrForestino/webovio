@@ -353,7 +353,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 188px 0 211px;
 }
 
 .informations {
@@ -384,6 +383,7 @@ footer {
 
 address {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 140px;
 }
 
@@ -403,6 +403,8 @@ address {
 .informations {
   gap: 70px;
   margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services__title,
@@ -437,6 +439,7 @@ address {
 
 .footer__logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
