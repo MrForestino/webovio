@@ -21,6 +21,8 @@ footer{
 	// color: map-get($colors'color-light-green');
 	color: #B6C197;
 	width: 250px;	
+	margin-bottom: 23px;
+
 }
 .phone__text,.phone__address{
 	font-weight: 400;
@@ -30,6 +32,7 @@ footer{
 }
 address{
 	display: flex;
+	margin-bottom: 140px;
 }
 .number,.address{
 	font-weight: 700;
@@ -41,6 +44,44 @@ address{
 .c{
 	font-size: 14px;
 	color: #b5c096;
+}
+.informations{
+	gap:70px;
+	margin-bottom: 100px;
+
+	// &__services,
+	// &__help,
+	// &__company,
+	// &__touch{
+
+	// }
+}
+.services__title,
+.help__title,
+.company__title,
+.touch__title{
+	margin-bottom: 20px;
+
+}
+.services__list--link,
+.help__list--link,
+.company__list--link{
+	text-decoration: none;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 250%;
+	color: #b6c197;
+}
+.informations__touch{
+	margin-left: 130px;
+}
+.touch__email{
+	text-decoration: none;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 158%;
 }
 .footer__logo{
 	display: flex;

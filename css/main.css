@@ -17,6 +17,15 @@ h2 {
   width: 400px;
 }
 
+h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 237%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 p {
   color: rgba(77, 83, 60, 0.9);
   width: 421px;
@@ -363,6 +372,7 @@ footer {
 .touch___text {
   color: #B6C197;
   width: 250px;
+  margin-bottom: 23px;
 }
 
 .phone__text, .phone__address {
@@ -374,6 +384,7 @@ footer {
 
 address {
   display: flex;
+  margin-bottom: 140px;
 }
 
 .number, .address {
@@ -387,6 +398,41 @@ address {
 .c {
   font-size: 14px;
   color: #b5c096;
+}
+
+.informations {
+  gap: 70px;
+  margin-bottom: 100px;
+}
+
+.services__title,
+.help__title,
+.company__title,
+.touch__title {
+  margin-bottom: 20px;
+}
+
+.services__list--link,
+.help__list--link,
+.company__list--link {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 250%;
+  color: #b6c197;
+}
+
+.informations__touch {
+  margin-left: 130px;
+}
+
+.touch__email {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 158%;
 }
 
 .footer__logo {
