@@ -12,6 +12,13 @@
 	}
 	&__logo--link{
 		display: flex;
+		align-items: center;
+	}
+	&__name--image{
+		width: 100px;
+	}
+	&__logo--image{
+		width: 30px;
 	}
 }
 
@@ -78,4 +85,17 @@ input[type="checkbox"]:checked ~ label span::before {
 input[type="checkbox"]:checked ~ label span::after {
 	top: 0;
 	transform: rotate(90deg);
+}
+nav{
+	display:  none;
+}
+@media screen and (min-width: 780px){
+	.header__container--flex{
+		display: flex;
+	}
+	// nav{
+	// 	display: flex;
+	// }
+}
+@media screen and (min-width: 1200px){
 }

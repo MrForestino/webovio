@@ -3,21 +3,26 @@
 	background-size: cover; 
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 188px 0 211px;
+	padding: 100px 12px 30px;
+
 	&__text, &__title,&__subtext{
 		color: map-get($colors, 'color-font-white');
 	}
 	&__text{
-		font-size: 14px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 133%;
 	}
 	&__title{
-		font-size: 60px;
-		width: 616px;
-		padding: 22px 0 24px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 133%;
+		width: 249px;
+		padding: 10px 0;
 	}
 	&__subtext{
-		width: 581px;
-		padding-bottom: 45px;
+		width: 249px;
+		padding-bottom: 14px;
 	}
 	&__link{
 		color: map-get($colors, 'color-gold');
@@ -25,4 +30,10 @@
 		font-weight: 700;
 		text-decoration: underline;
 	}
+}
+@media screen and (min-width: 1200px){
+	.hero {
+		background-size: cover; 
+		padding: 188px 166px 211px;
+	}	
 }

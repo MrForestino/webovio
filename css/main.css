@@ -12,9 +12,11 @@ body {
 }
 
 h2 {
-  font-size: 36px;
-  color: #4D533C;
-  width: 400px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  color: #4d533c;
+  width: 320px;
 }
 
 h4 {
@@ -23,12 +25,12 @@ h4 {
   font-size: 16px;
   line-height: 237%;
   text-transform: uppercase;
-  color: #fff;
+  color: #4d533c;
 }
 
 p {
   color: rgba(77, 83, 60, 0.9);
-  width: 421px;
+  width: 320px;
 }
 
 a {
@@ -66,14 +68,19 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1111px;
+  max-width: 320px;
   margin: 0 auto;
-  outline: 2px dotted orange;
+  outline: 1px dotted rgb(255, 187, 0);
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1440px;
+    max-width: 1200px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
   }
 }
 @media (max-width: 768px) {
@@ -96,6 +103,13 @@ img {
 }
 .header__logo--link {
   display: flex;
+  align-items: center;
+}
+.header__name--image {
+  width: 100px;
+}
+.header__logo--image {
+  width: 30px;
 }
 
 input {
@@ -160,27 +174,40 @@ input[type=checkbox]:checked ~ label span::after {
   transform: rotate(90deg);
 }
 
+nav {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  .header__container--flex {
+    display: flex;
+  }
+}
 .hero {
   background-image: url(../img/bg-image.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 188px 0 211px;
+  padding: 100px 12px 30px;
 }
 .hero__text, .hero__title, .hero__subtext {
   color: #ffffff;
 }
 .hero__text {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
 }
 .hero__title {
-  font-size: 60px;
-  width: 616px;
-  padding: 22px 0 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  width: 249px;
+  padding: 10px 0;
 }
 .hero__subtext {
-  width: 581px;
-  padding-bottom: 45px;
+  width: 249px;
+  padding-bottom: 14px;
 }
 .hero__link {
   color: #FFD723;
@@ -189,6 +216,12 @@ input[type=checkbox]:checked ~ label span::after {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-size: cover;
+    padding: 188px 166px 211px;
+  }
+}
 .whatwedo {
   position: relative;
 }
@@ -202,6 +235,10 @@ input[type=checkbox]:checked ~ label span::after {
 .whatwedo__foryou, .whatwedo__aweseme_project {
   display: flex;
   flex-direction: column;
+}
+.whatwedo__image {
+  width: 320px;
+  height: 220px;
 }
 
 .aweseme_project, .ballenciaga__project,
@@ -248,6 +285,10 @@ input[type=checkbox]:checked ~ label span::after {
     box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
     background: #ffffff;
   }
+  .whatwedo__image {
+    width: 735px;
+    height: 550px;
+  }
   .text-card {
     padding-left: 30px;
   }
@@ -268,9 +309,6 @@ input[type=checkbox]:checked ~ label span::after {
     gap: 30px;
     padding-top: 100px;
   }
-  .awesome__title {
-    margin-right: 133px;
-  }
   .balenciaga__box, .booking__box {
     margin-left: 96px;
   }
@@ -290,7 +328,9 @@ input[type=checkbox]:checked ~ label span::after {
   flex-direction: column;
 }
 .productidea__title {
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
   margin-bottom: 60px;
 }
 
@@ -321,7 +361,7 @@ input[type=checkbox]:checked ~ label span::after {
 
 @media screen and (min-width: 1200px) {
   .productidea {
-    padding: 165px 150px;
+    padding: 165px 0 150px;
   }
   .productidea__container--flex {
     display: flex;
@@ -348,24 +388,15 @@ input[type=checkbox]:checked ~ label span::after {
   }
 }
 footer {
-  padding: 310px 164px 30px;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.informations {
-  display: flex;
-}
-
 .informations__services,
 .informations__help {
   padding-right: 70px;
-}
-
-.informations__company {
-  padding-right: 124px;
 }
 
 .touch___text {
@@ -382,7 +413,6 @@ footer {
 }
 
 address {
-  display: flex;
   flex-wrap: wrap;
   margin-bottom: 140px;
 }
@@ -403,7 +433,6 @@ address {
 .informations {
   gap: 70px;
   margin-bottom: 100px;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -425,10 +454,6 @@ address {
   color: #b6c197;
 }
 
-.informations__touch {
-  margin-left: 130px;
-}
-
 .touch__email {
   text-decoration: none;
   font-family: var(--font-family);
@@ -438,7 +463,6 @@ address {
 }
 
 .footer__logo {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;

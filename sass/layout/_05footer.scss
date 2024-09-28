@@ -1,5 +1,4 @@
 footer{
-	padding: 310px 164px 30px;
 
 	background-image: url(../img/bg.png);
 	background-size: cover; 
@@ -8,14 +7,14 @@ footer{
 	// padding: 188px 0 211px;
 }
 .informations{
-	display: flex;
+	 
 }
 .informations__services,
 .informations__help{
 	padding-right: 70px;
 }
 .informations__company{
-	padding-right: 124px;
+
 }
 .touch___text{
 	// color: map-get($colors'color-light-green');
@@ -31,7 +30,7 @@ footer{
 	color: #b6c197;
 }
 address{
-	display: flex;
+	 
 	flex-wrap: wrap;
 	margin-bottom: 140px;
 }
@@ -49,7 +48,7 @@ address{
 .informations{
 	gap:70px;
 	margin-bottom: 100px;
-	display: flex;
+	 
 	flex-wrap: wrap;
 	// &__services,
 	// &__help,
@@ -76,7 +75,6 @@ address{
 	color: #b6c197;
 }
 .informations__touch{
-	margin-left: 130px;
 }
 .touch__email{
 	text-decoration: none;
@@ -86,7 +84,7 @@ address{
 	line-height: 158%;
 }
 .footer__logo{
-	display: flex;
+	 
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;

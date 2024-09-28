@@ -6,8 +6,11 @@
 	}
 	&__title{
 		// width: 607px;
-		font-size: 36px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 125%;
 		margin-bottom: 60px;
+		
 	}
 }
 .card{
@@ -36,7 +39,7 @@
 }
 @media screen and (min-width:1200px){
 	.productidea{
-		padding: 165px 150px;
+		padding: 165px 0 150px;
 		&__container--flex {
 			display: flex;
 			justify-content: space-between;

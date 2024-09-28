@@ -1,21 +1,23 @@
-.container{
+.container {
   width: 100%;
-	max-width: 1111px;
-	margin: 0 auto;
-	outline: 2px dotted orange;
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px dotted rgb(255, 187, 0);
+  
 }
+
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1440px;
+    max-width: 1200px;
   }
 }
 
-// @media (min-width: 769px) and (max-width: 1199px) {
-//   .container {
-//     max-width: 768px;
-//   }
-// }
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
