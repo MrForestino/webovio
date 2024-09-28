@@ -59,8 +59,27 @@
 				background: #ffffff;
 			}
 			&__image{
+				position: relative;
 				width: 735px;
 				height: 550px;
+			}
+			.card{
+				position: absolute;
+				
+				width: 453px;
+				height: 210px;
+				border-radius: 8px;
+				background-color: #fff;
+				box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
+				
+				&__text{
+					width: 390px;
+					font-style: italic;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 162%;
+					color: #4d533c;
+				}
 			}
 		}
 		.text-card{
@@ -89,6 +108,10 @@
 		.balenciaga__box,.booking__box{
 			margin-left: 96px;
 		}
+		.model__project{
+			flex-direction: row-reverse
+		}
+
 		.model__box{
 			margin-right: 58px;
 		}
