@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,14 @@
                 src='./svg/webovio.svg'
                 />
             </a>
-            <nav class="header__nav">
-                    <div class="informations__services">
+            <nav class="header__nav nav-list">
+                <div class="header__menu--box">
+                    <input type='checkbox' id='toggle'/>
+                    <label for='toggle'>
+                        <span class='toggle-btn'></span>
+                    </label>
+                </div>
+                <div class="informations__services">
                         <h4 class="services__title">Services</h4>
                         <ul class="services__list">
                             <li class="services__list--item">
@@ -50,7 +56,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="informations__help">
+                <div class="informations__help">
                         <h4 class="help__title">Help And Advice</h4>
                         <ul class="help__list">
                             <li class="help__list--item">
@@ -67,7 +73,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="informations__company">
+                <div class="informations__company">
                         <h4 class="company__title">Company</h4>
                         <ul class="company__list">
                             <li class="company__list--item">
@@ -85,22 +91,26 @@
                         </ul>
                     </div>
             </nav>
-            <div class="header__menu--box">
-                <input type='checkbox' id='toggle'/>
-                <label for='toggle'>
-                    <span class='toggle-btn'></span>
-                </label>
-            </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
                 <div class="hero__container">
-                    <p class="hero__text">A place where </p>
-                <h2 class="hero__title">A creative agency for redemptive brands</h2>
-                <p class="hero__subtext">Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
-                <a href="./" class="hero__link">‣ Get in touch</a>
+                    <div class="hero__elements">
+                        <p class="hero__text">A place where </p>
+                        <h2 class="hero__title">A creative agency for redemptive brands</h2>
+                        <p class="hero__subtext">Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
+                        <a href="./" class="hero__link">‣ Get in touch</a>
+                    </div>
+                    <div class="hero__companies">
+                        <img 
+                        src="./img/company.png" 
+                        alt="" 
+                        width="1045px"
+                        height="113px"
+                        class="companies__image">
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,8 +161,8 @@
                         alt=""
                         />
                         <div class="whatwedo__foryou--cardphoto">
-                            <div class="card">
-                                <p class="card__text">
+                            <div class="card--whatwedo">
+                                <p class="card__text--whatwedo">
                                     “In my history of working with trade show vendors, I can honestly say that there is not one company that I've ever worked with that has better service than Exhibit Systems.”
                                 </p>
                                 <h4 class="card__text--name">
@@ -181,8 +191,8 @@
                         height='550px'
                         alt=""
                         />
-                        <div class="card">
-                            <p class="card__text">
+                        <div class="card--whatwedo">
+                            <p class="card__text--whatwedo">
                                 “I know they are going to be honest with me. I am not going to get a subpar product; I know it is going to be good. That is the number one advantage of working with Exhibit Systems.
                             </p>
                             <h4 class="card__text--name">
@@ -211,8 +221,8 @@
                         height='550px'
                         alt=""
                         />
-                        <div class="card">
-                            <p class="card__text">
+                        <div class="card--whatwedo">
+                            <p class="card__text--whatwedo">
                                 “Exhibit Systems is not a provider. They are not a supplier. They are a partner with expertise in making trade shows effective.”
                             </p>
                             <h4 class="card__text--name">
@@ -260,11 +270,26 @@
                         <a href="./" class="card__link">‣ Read More</a>
                     </div>
                 </div>
+                <div class="productidea__encourage">
+                    <p class='encourage__text'>
+                        Let’s make something amazing together.
+                    </p>
+                    <a href="./" class="encourage__link">‣ LET'S GET STARTED</a>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container footer__container--flex">
+            <div class="footer__logo">
+                <a href="./" class="header__logo--link">
+                    <img
+                    src='./svg/logo-footer.svg'
+                    width='199px'
+                    height='30px'
+                    />
+                </a>
+            </div>
             <address>
                 <div class="phones">
                     <p class="phone__text">
@@ -283,50 +308,49 @@
                     </a>
                 </div>
             </address>
+            <span class='span__line'></span>
             <div class="informations__touch">
-                <h4 class="touch__title">
-                    Get in Touch
-                </h4>
-                <p class="touch___text">
-                    Feel free to get in touch with us vai email
-                </p>
+                <div class="touch">
+                    <h4 class="touch__title">
+                        Get in Touch
+                    </h4>
+                    <p class="touch___text">
+                        Feel free to get in touch with us vai email
+                    </p>
+                </div>
+                <span class='span__line--horizontal'></span>
+               <div class="touch__email--container">
                 <a href="info.webovio@gmail.com" class="touch__email">info.webovio@gmail.com</a>
                 <div class="footer__social-media">
                     <a class="footer__social-link" href="./">
-                        <svg class="footer__social-icon" width="20px" height="20px">
+                        <svg class="footer__social-icon" width="30px" height="30px">
                             <use href="./img/symboldefts.svg#facebook"></use>
                         </svg>
-                        
                     </a>
                     <a class="footer__social-link" href="./">
-                        <svg class="footer__social-icon" width="20px" height="20px">
+                        <svg class="footer__social-icon" width="30px" height="30px">
                             <use href="./img/symboldefts.svg#twitter"></use>
                         </svg>
                     </a>
                     <a class="footer__social-link" href="./">
-                        <svg class="footer__social-icon" width="20px" height="20px">
+                        <svg class="footer__social-icon" width="30px" height="30px">
                             <use href="./img/symboldefts.svg#instagram"></use>
                         </svg>
                     </a>
                     <a class="footer__social-link" href="./">
-                        <svg class="footer__social-icon" width="20px" height="20px">
+                        <svg class="footer__social-icon" width="30px" height="30px">
                             <use href="./img/symboldefts.svg#linkedin"></use>
                         </svg>
                     </a>
                 </div>
+               </div>
             </div>
-            <div class="footer__logo">
-                <a href="./" class="header__logo--link">
-                    <img
-                    src='./svg/logo-footer.svg'
-                    width='199px'
-                    height='30px'
-                    />
-                </a>
-                <p class="c">
-                    © 2020@webovio. All Rights Reserved.
-                </p>
-            </div>
+            <span class='span__line'></span>
+           <div class="corporation">
+            <p class="c">
+                © 2020@webovio. All Rights Reserved.
+            </p>
+           </div>
         </div>
     </footer>
 </body>

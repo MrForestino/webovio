@@ -22,6 +22,39 @@
 		flex-direction: column;
 		gap: 30px;
 	}
+	.card--whatwedo{
+		position: static;
+		width: 320px;
+		height: 150px;
+
+		padding: 30px;
+		border-radius: 8px;
+		background-color: #fff;
+		box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
+
+		&__text--whatwedo{
+			width: 300px;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 162%;
+			color: #4d533c;
+		}
+	}
+	.text-card{
+		width: 300px;
+		padding-left: 30px;
+	}
+	.card__text--name{
+		font-weight: 700;
+		font-size: 22px;
+		color: #4d533c;
+	}
+	.ceo{
+		width: 100%;
+		font-size: 16px;
+		color: #152934;
+	}
 	@media screen and (min-width:1200px){
 		.whatwedo{
 			position: relative;
@@ -58,21 +91,31 @@
 				box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
 				background: #ffffff;
 			}
-			&__image{
+			.ballenciaga__project,.model__project,.booking__project{
 				position: relative;
+
+			}
+			&__image{
 				width: 735px;
 				height: 550px;
 			}
-			.card{
+			.card--whatwedo{
 				position: absolute;
-				
 				width: 453px;
 				height: 210px;
+				padding: 30px;
 				border-radius: 8px;
 				background-color: #fff;
 				box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
-				
-				&__text{
+				&:first-child, &:nth-child(2){
+					bottom: -65px;
+					left: 322px;
+				}
+				&:nth-child(1){
+					bottom: -65px;
+					right: 322px;
+				}
+				&__text--whatwedo{
 					width: 390px;
 					font-style: italic;
 					font-weight: 400;
@@ -102,9 +145,10 @@
 				gap: 30px;
 				padding-top: 100px;
 			}
-		// .awesome__title{
-		// 	margin-right: 133px;
-		// }
+		.awesome__title{
+			width: 460px;
+			margin-right: 133px;
+		}
 		.balenciaga__box,.booking__box{
 			margin-left: 96px;
 		}
@@ -120,5 +164,22 @@
 		}
 		.balenciaga__subtext,.booking__subtext,.model__subtext{
 			margin-bottom: 90px;
+		}
+		.foryou__text{
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+		.foryou__title{
+			font-size: 36px;
+			line-height: 128%;
+			width: 394px;
+			margin-bottom: 35px;
+		}
+		.foryou__subtitle{
+			font-size: 16px;
+			line-height: 162%;
+			color: rgba(33, 56, 66, 0.6);
+			margin-bottom: 42px;
+			width: 475px;
 		}
 	}

@@ -36,12 +36,28 @@ p {
 a {
   color: #d4d6d4;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   color: #FFD723;
 }
 
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: #4d533c;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: rgba(77, 83, 60, 0.9);
+    width: 320px;
+  }
+}
 *,
 *::before,
 *::after {
@@ -76,16 +92,6 @@ img {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1199px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 480px;
   }
 }
 .header {
@@ -174,13 +180,59 @@ input[type=checkbox]:checked ~ label span::after {
   transform: rotate(90deg);
 }
 
-nav {
-  display: none;
-}
-
 @media screen and (min-width: 780px) {
   .header__container--flex {
     display: flex;
+  }
+  nav {
+    display: flex;
+  }
+  .header__menu--box {
+    display: none;
+  }
+  .header__name--image {
+    width: 180px;
+  }
+  .header__logo--image {
+    width: 50px;
+  }
+  .informations__services:hover .services__list,
+  .informations__help:hover .help__list,
+  .informations__company:hover .company__list {
+    opacity: 1;
+    max-height: 500px;
+  }
+  .services__title,
+  .help__title,
+  .company__title {
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  .services__list,
+  .help__list,
+  .company__list {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    margin-top: -30px;
+    padding: 30px 10px 0;
+    border-radius: 7px;
+    background-color: #DDDDDD;
+  }
+  .services__list--link,
+  .help__list--link,
+  .company__list--link {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    color: #b6c197;
   }
 }
 .hero {
@@ -189,6 +241,9 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 12px 30px;
+}
+.hero__companies {
+  display: none;
 }
 .hero__text, .hero__title, .hero__subtext {
   color: #ffffff;
@@ -221,6 +276,41 @@ nav {
     background-size: cover;
     padding: 188px 166px 211px;
   }
+  .hero__companies {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -300px;
+    left: 165px;
+    width: 1276px;
+    height: 227px;
+    border-radius: 2px;
+    box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+  }
+  .hero__container {
+    position: relative;
+  }
+  .hero__text {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .hero__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 123%;
+    width: 616px;
+    padding: 22px 0;
+  }
+  .hero__subtext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    width: 581px;
+    padding-bottom: 45px;
+  }
 }
 .whatwedo {
   position: relative;
@@ -246,6 +336,41 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.card--whatwedo {
+  position: static;
+  width: 320px;
+  height: 150px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
+}
+.card--whatwedo__text--whatwedo {
+  width: 300px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #4d533c;
+}
+
+.text-card {
+  width: 300px;
+  padding-left: 30px;
+}
+
+.card__text--name {
+  font-weight: 700;
+  font-size: 22px;
+  color: #4d533c;
+}
+
+.ceo {
+  width: 100%;
+  font-size: 16px;
+  color: #152934;
 }
 
 @media screen and (min-width: 1200px) {
@@ -285,20 +410,31 @@ nav {
     box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
     background: #ffffff;
   }
-  .whatwedo__image {
+  .whatwedo .ballenciaga__project, .whatwedo .model__project, .whatwedo .booking__project {
     position: relative;
+  }
+  .whatwedo__image {
     width: 735px;
     height: 550px;
   }
-  .whatwedo .card {
+  .whatwedo .card--whatwedo {
     position: absolute;
     width: 453px;
     height: 210px;
+    padding: 30px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
   }
-  .whatwedo .card__text {
+  .whatwedo .card--whatwedo:first-child, .whatwedo .card--whatwedo:nth-child(2) {
+    bottom: -65px;
+    left: 322px;
+  }
+  .whatwedo .card--whatwedo:nth-child(1) {
+    bottom: -65px;
+    right: 322px;
+  }
+  .whatwedo .card--whatwedo__text--whatwedo {
     width: 390px;
     font-style: italic;
     font-weight: 400;
@@ -326,6 +462,10 @@ nav {
     gap: 30px;
     padding-top: 100px;
   }
+  .awesome__title {
+    width: 460px;
+    margin-right: 133px;
+  }
   .balenciaga__box, .booking__box {
     margin-left: 96px;
   }
@@ -341,6 +481,23 @@ nav {
   .balenciaga__subtext, .booking__subtext, .model__subtext {
     margin-bottom: 90px;
   }
+  .foryou__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .foryou__title {
+    font-size: 36px;
+    line-height: 128%;
+    width: 394px;
+    margin-bottom: 35px;
+  }
+  .foryou__subtitle {
+    font-size: 16px;
+    line-height: 162%;
+    color: rgba(33, 56, 66, 0.6);
+    margin-bottom: 42px;
+    width: 475px;
+  }
 }
 .productidea__container--flex {
   display: flex;
@@ -352,6 +509,10 @@ nav {
   font-size: 24px;
   line-height: 125%;
   margin-bottom: 60px;
+}
+
+.productidea__encourage {
+  display: none;
 }
 
 .card {
@@ -393,6 +554,29 @@ nav {
   }
   .product__container--flex {
     display: block;
+    position: relative;
+  }
+  .productidea__encourage {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 1275px;
+    height: 300px;
+    padding: 70px 0 0 164px;
+    box-shadow: 50px 130px 100px 0 rgba(0, 0, 0, 0.15);
+    background: #fafafa;
+  }
+  .encourage__text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 123%;
+    color: #4d533c;
+    width: 685px;
+    margin-bottom: 50px;
+  }
+  .encourage__link {
+    font-weight: 700;
+    font-size: 16px;
   }
   .design__text {
     margin-bottom: 56px;
@@ -412,6 +596,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 227px 0 211px;
 }
 
 .informations__services,
@@ -419,10 +604,16 @@ footer {
   padding-right: 70px;
 }
 
+.touch {
+  text-align: center;
+}
+
 .touch___text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
   color: #B6C197;
-  width: 250px;
-  margin-bottom: 23px;
+  margin-bottom: 50px;
 }
 
 .phone__text, .phone__address {
@@ -433,8 +624,9 @@ footer {
 }
 
 address {
+  margin-left: 50px;
   flex-wrap: wrap;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 
 .number, .address {
@@ -456,22 +648,13 @@ address {
   flex-wrap: wrap;
 }
 
-.services__title,
-.help__title,
-.company__title,
 .touch__title {
-  margin-bottom: 20px;
-}
-
-.services__list--link,
-.help__list--link,
-.company__list--link {
-  text-decoration: none;
-  font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 250%;
-  color: #b6c197;
+  line-height: 237%;
+  color: #fff;
+  height: 30px;
+  margin-bottom: 23px;
 }
 
 .touch__email {
@@ -482,8 +665,68 @@ address {
   line-height: 158%;
 }
 
+.informations__touch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.span__line::before {
+  content: "";
+  display: block;
+  background: #5d6544;
+  width: 100%;
+  height: 1px;
+}
+
+.corporation {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 40px;
+}
+
 .footer__logo {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer__social-link {
+  background-color: #444A34;
+  width: 40px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.touch__email--container {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .span__line--horizontal::before {
+    content: "";
+    display: block;
+    background: #5d6544;
+    width: 1px;
+    height: 100px;
+    margin-left: 145px;
+    margin-right: 210px;
+  }
+  .touch___text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    color: #B6C197;
+    width: 375px;
+    margin-bottom: 23px;
+  }
+  .touch__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 378%;
+    color: #fff;
+    height: 100px;
+    margin-bottom: 23px;
+  }
 }/*# sourceMappingURL=main.css.map */

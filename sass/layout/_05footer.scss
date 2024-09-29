@@ -4,24 +4,21 @@ footer{
 	background-size: cover; 
 	background-position: center;
 	background-repeat: no-repeat;
-	// padding: 188px 0 211px;
-}
-.informations{
-	 
+	padding: 227px 0 211px;
 }
 .informations__services,
 .informations__help{
 	padding-right: 70px;
 }
-.informations__company{
-
+.touch{
+	text-align: center;
 }
 .touch___text{
-	// color: map-get($colors'color-light-green');
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
 	color: #B6C197;
-	width: 250px;	
-	margin-bottom: 23px;
-
+	margin-bottom: 50px;
 }
 .phone__text,.phone__address{
 	font-weight: 400;
@@ -30,9 +27,9 @@ footer{
 	color: #b6c197;
 }
 address{
-	 
+	 margin-left: 50px;
 	flex-wrap: wrap;
-	margin-bottom: 140px;
+	margin-bottom: 100px;
 }
 .number,.address{
 	font-weight: 700;
@@ -57,24 +54,13 @@ address{
 
 	// }
 }
-.services__title,
-.help__title,
-.company__title,
 .touch__title{
-	margin-bottom: 20px;
-
-}
-.services__list--link,
-.help__list--link,
-.company__list--link{
-	text-decoration: none;
-	font-family: var(--font-family);
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 16px;
-	line-height: 250%;
-	color: #b6c197;
-}
-.informations__touch{
+	line-height: 237%;
+	color: #fff;
+	height: 30px;
+	margin-bottom: 23px;
 }
 .touch__email{
 	text-decoration: none;
@@ -83,9 +69,66 @@ address{
 	font-size: 24px;
 	line-height: 158%;
 }
+.informations__touch{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.span__line::before{
+	content: '';
+	display: block;
+	background: #5d6544;
+	width: 100%;
+	height: 1px;
+}
+.corporation{
+	display: flex;
+	justify-content: center;
+	padding: 40px 0 40px;
+}
 .footer__logo{
 	 
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+}
+.footer__social-link{
+	background-color: #444A34;
+	width: 40px;
+	// height: 40px;
+	// border-radius: 15px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.touch__email--container{
+	text-align: center;
+}
+@media screen and (min-width:1200px){
+	.span__line--horizontal::before{
+		content: '';
+		display: block;
+		background: #5d6544;
+		width: 1px;
+		height: 100px;
+		margin-left: 145px;
+		margin-right: 210px;
+	}
+	.touch___text{
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 108%;
+		color: #B6C197;
+		width: 375px;	
+		margin-bottom: 23px;
+	
+	}
+	.touch__title{
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 378%;
+		color: #fff;
+		height: 100px;
+		margin-bottom: 23px;
+	}
 }

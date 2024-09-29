@@ -13,6 +13,9 @@
 		
 	}
 }
+.productidea__encourage{
+	display: none;
+}
 .card{
 	height: 255px;
 	&__title{
@@ -51,6 +54,30 @@
 	}
 	.product__container--flex{
 		display: block;
+		position: relative;
+	}
+	.productidea__encourage{
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		width: 1275px;
+		height: 300px;
+		padding: 70px 0 0 164px;
+		box-shadow: 50px 130px 100px 0 rgba(0, 0, 0, 0.15);
+		background: #fafafa;
+		
+	}
+	.encourage__text{
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 123%;
+		color: #4d533c;
+		width: 685px;
+		margin-bottom: 50px;
+	}
+	.encourage__link{
+		font-weight: 700;
+		font-size: 16px;
 	}
 	.design__text{
 		margin-bottom: 56px;
@@ -65,27 +92,3 @@
 		margin-bottom: 60px;
 	}
 }
-// @media screen and (min-width:768px){
-// 	.productidea{
-// 		&__title{
-// 			width: 500px;
-// 		}
-// 		&__container--flex {
-// 			display: grid;
-// 			grid-template-columns: repeat(2, 1fr);
-// 			gap: 30px;
-// 		}
-// 	}
-// 	.design__text{
-// 		margin-bottom: 56px;
-// 	}
-// 	.uxreview__text{
-// 		margin-bottom: 90px;
-// 	}
-// 	.scopping__text{
-// 		margin-bottom: 30px;
-// 	}
-// 	.codereview__text{
-// 		margin-bottom: 60px;
-// 	}
-// }

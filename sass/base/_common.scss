@@ -32,7 +32,24 @@ p{
 a{
 	color: #d4d6d4;
 	text-decoration: underline;
+	transition: color 0.3s ease;
 }
 a:hover{
 	color: #FFD723;
+}
+@media screen and (min-width:1200px){
+	h2{
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 128%;
+		color: #4d533c;
+	}
+	p{	
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 162%;
+
+		color: rgba(77, 83, 60, 0.9);
+		width: 320px;
+	}
 }
