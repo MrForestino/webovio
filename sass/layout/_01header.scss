@@ -21,7 +21,11 @@
 		width: 30px;
 	}
 }
-
+.informations__services,
+.informations__help,
+.informations__company{
+	display: none;
+}
 input{
 	display: none;
 }

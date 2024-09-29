@@ -94,15 +94,25 @@ address{
 	justify-content: space-between;
 }
 .footer__social-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #444A34;
-	width: 40px;
-	// height: 40px;
-	// border-radius: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
 	margin-right: 20px;
 	text-decoration: none;
 }
+.footer__social-link:hover{
+	background-color: #FFD723;
+}
 .touch__email--container{
 	text-align: center;
+}
+.footer__social-media{
+	display: flex;
+
 }
 @media screen and (min-width:1200px){
 	.span__line--horizontal::before{

@@ -24,8 +24,8 @@
 	}
 	.card--whatwedo{
 		position: static;
-		width: 320px;
-		height: 150px;
+		width: 250px;
+		height: 220px;
 
 		padding: 30px;
 		border-radius: 8px;
@@ -33,7 +33,7 @@
 		box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
 
 		&__text--whatwedo{
-			width: 300px;
+			width: 150px;
 			font-style: italic;
 			font-weight: 400;
 			font-size: 16px;
@@ -54,6 +54,9 @@
 		width: 100%;
 		font-size: 16px;
 		color: #152934;
+	}
+	.card__text--whatwedo{
+		width: 270px;
 	}
 	@media screen and (min-width:1200px){
 		.whatwedo{
@@ -102,7 +105,7 @@
 			.card--whatwedo{
 				position: absolute;
 				width: 453px;
-				height: 210px;
+				height: 243px;
 				padding: 30px;
 				border-radius: 8px;
 				background-color: #fff;

@@ -118,6 +118,12 @@ img {
   width: 30px;
 }
 
+.informations__services,
+.informations__help,
+.informations__company {
+  display: none;
+}
+
 input {
   display: none;
 }
@@ -340,15 +346,15 @@ input[type=checkbox]:checked ~ label span::after {
 
 .card--whatwedo {
   position: static;
-  width: 320px;
-  height: 150px;
+  width: 250px;
+  height: 220px;
   padding: 30px;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
 }
 .card--whatwedo__text--whatwedo {
-  width: 300px;
+  width: 150px;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -371,6 +377,10 @@ input[type=checkbox]:checked ~ label span::after {
   width: 100%;
   font-size: 16px;
   color: #152934;
+}
+
+.card__text--whatwedo {
+  width: 270px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -420,7 +430,7 @@ input[type=checkbox]:checked ~ label span::after {
   .whatwedo .card--whatwedo {
     position: absolute;
     width: 453px;
-    height: 210px;
+    height: 243px;
     padding: 30px;
     border-radius: 8px;
     background-color: #fff;
@@ -693,14 +703,27 @@ address {
 }
 
 .footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #444A34;
-  width: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
   margin-right: 20px;
   text-decoration: none;
 }
 
+.footer__social-link:hover {
+  background-color: #FFD723;
+}
+
 .touch__email--container {
   text-align: center;
+}
+
+.footer__social-media {
+  display: flex;
 }
 
 @media screen and (min-width: 1200px) {
