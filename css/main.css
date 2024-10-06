@@ -168,6 +168,10 @@ label span::after {
 
 input[type=checkbox]:checked ~ .nav-list {
   display: flex;
+}
+
+input[type=checkbox]:checked ~ .nav-list {
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
